@@ -1,5 +1,6 @@
 
 export type WorkoutType = 'Gym' | 'Running' | 'Yoga' | 'Swimming' | 'Cycling' | 'Hiking' | 'Tennis' | 'Basketball' | 'CrossFit';
+export type FitnessLevel = 'Beginner' | 'Intermediate' | 'Advanced';
 
 export interface User {
   id: string;
@@ -7,6 +8,7 @@ export interface User {
   avatar: string;
   bio: string;
   interests: WorkoutType[];
+  fitnessLevel: FitnessLevel;
   location?: {
     lat: number;
     lng: number;
@@ -17,6 +19,7 @@ export interface WorkoutSession {
   id: string;
   host: User;
   type: WorkoutType;
+  level: FitnessLevel;
   title: string;
   description: string;
   locationName: string;

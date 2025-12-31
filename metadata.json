@@ -1,0 +1,7 @@
+{
+  "name": "WorkoutBuddy",
+  "description": "Find workout partners near you, join group sessions, and stay motivated with AI-powered matchmaking.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
